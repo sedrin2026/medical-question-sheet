@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>術後7か月 簡易質問応答シート</title>
+<style>
+:root{--bg:#f4fbfd;--card:#fff;--line:#b9dce5;--accent:#20a8c7;--text:#16323a;--muted:#61777d}*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif;background:linear-gradient(180deg,#eefafd 0%,#f8fcfd 45%,#edf8fb 100%);color:var(--text)}.app{max-width:760px;margin:0 auto;padding:16px 14px 40px}.hero{background:linear-gradient(135deg,#0b7189,#27b4cf);color:#fff;border-radius:18px;padding:20px 18px;box-shadow:0 8px 24px rgba(19,128,151,.18)}.hero h1{font-size:22px;margin:0 0 6px}.hero p{font-size:13px;line-height:1.6;margin:0;opacity:.95}.card{background:var(--card);border:1px solid #d7e9ee;border-radius:16px;padding:16px;margin-top:14px;box-shadow:0 4px 14px rgba(23,75,86,.06)}.qnum{font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.06em}.question{font-size:16px;font-weight:700;line-height:1.55;margin:5px 0 12px}.choices{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}.choice input{display:none}.choice span{display:inline-block;border:1px solid #b9dce5;background:#f7fcfd;padding:9px 12px;border-radius:999px;font-size:14px}.choice input:checked+span{background:#dff8fc;border-color:#46bed4;color:#08677c;font-weight:700}textarea,input[type=text]{width:100%;border:1px solid #c7dfe5;border-radius:11px;padding:11px 12px;font-size:15px;color:var(--text);background:#fbfeff;outline:none}textarea{min-height:74px;resize:vertical}.final{border:1px solid #9ed9e5;background:linear-gradient(180deg,#f2fcfe,#fff)}.smallnote{margin-top:14px;font-size:11px;line-height:1.6;color:#6f858b;text-align:center}.actions{display:none}.app{max-width:none;padding:0}.card,.hero{box-shadow:none;break-inside:avoid}}
+
+
+</style></head><body><main class="app">
+<section class="hero"><h1>術後7か月｜簡易質問応答シート</h1><p>子宮内膜症の手術から7か月目の診察で、先生へ確認したい内容をまとめた簡易シートです。<br>選択または短い入力で回答いただけます。<br></p>
+</section>
+
+<section class="card"><div class="qnum">QUESTION 01</div><div class="question">手術後の現在の状態は問題ありませんか？<br> 経過は順調と言ってよい状態でしょうか？<br></div><div class="choices"><label class="choice"><input type="radio" name="q1" value="順調"><span>順調</span></label><label class="choice"><input type="radio" name="q1" value="概ね順調"><span>概ね順調</span></label><label class="choice"><input type="radio" name="q1" value="要経過観察"><span>要経過観察</span></label><label class="choice"><input type="radio" name="q1" value="その他"><span>その他</span></label></div><textarea id="q1memo" placeholder="補足・先生のコメント"></textarea></section>
+<section class="card"><div class="qnum">QUESTION 02</div><div class="question">子宮内膜症は手術でどの程度取り切れていましたか？<br> 残っている病変はありますか？<br></div><div class="choices"><label class="choice"><input type="radio" name="q2" value="残存なし"><span>残存なし</span></label><label class="choice"><input type="radio" name="q2" value="一部残存"><span>一部残存</span></label><label class="choice"><input type="radio" name="q2" value="不明・要観察"><span>不明・要観察</span></label></div><textarea id="q2memo" placeholder="場所・程度・今後の注意点など"></textarea></section>
+<section class="card"><div class="qnum">QUESTION 03</div><div class="question">残した卵巣に、今後子宮内膜症やチョコレート嚢胞などが生じる可能性はありますか？<br></div><div class="choices"><label class="choice"><input type="radio" name="q3" value="低い"><span>低い</span></label><label class="choice"><input type="radio" name="q3" value="あり"><span>あり</span></label><label class="choice"><input type="radio" name="q3" value="経過観察"><span>経過観察</span></label></div><textarea id="q3memo" placeholder="再発リスクや注意点"></textarea></section>
+<section class="card"><div class="qnum">QUESTION 04</div><div class="question">残っている卵巣は、現在きちんと機能していると考えてよいですか？<br></div><div class="choices"><label class="choice"><input type="radio" name="q4" value="問題なし"><span>問題なし</span></label><label class="choice"><input type="radio" name="q4" value="要確認"><span>要確認</span></label><label class="choice"><input type="radio" name="q4" value="検査予定"><span>検査予定</span></label></div><textarea id="q4memo" placeholder="検査・ホルモン状態など"></textarea></section>
+<section class="card"><div class="qnum">QUESTION 05</div><div class="question">卵巣が1つになったことで、更年期が通常より早く来る可能性はありますか？<br></div><div class="choices"><label class="choice"><input type="radio" name="q5" value="可能性は低い"><span>可能性は低い</span></label><label class="choice"><input type="radio" name="q5" value="可能性あり"><span>可能性あり</span></label><label class="choice"><input type="radio" name="q5" value="個人差あり"><span>個人差あり</span></label></div><textarea id="q5memo" placeholder="注意する症状・目安"></textarea></section>
+<section class="card"><div class="qnum">QUESTION 06</div><div class="question">今後の定期検診は、どのくらいの間隔で受ければよいですか？<br></div><div class="choices"><label class="choice"><input type="radio" name="q6" value="3か月"><span>3か月</span></label><label class="choice"><input type="radio" name="q6" value="6か月"><span>6か月</span></label><label class="choice"><input type="radio" name="q6" value="1年"><span>1年</span></label><label class="choice"><input type="radio" name="q6" value="症状がある時"><span>症状がある時</span></label></div><textarea id="q6memo" placeholder="超音波・血液検査など必要な検査"></textarea></section>
+<section class="card"><div class="qnum">QUESTION 07</div><div class="question">今後、ホルモン治療などが必要になる可能性はありますか？<br></div><div class="choices"><label class="choice"><input type="radio" name="q7" value="現時点では不要"><span>現時点では不要</span></label><label class="choice"><input type="radio" name="q7" value="今後検討あり"><span>今後検討あり</span></label><label class="choice"><input type="radio" name="q7" value="必要"><span>必要</span></label></div><textarea id="q7memo" placeholder="治療開始の条件・症状など"></textarea></section>
+
+<section class="card"><div class="qnum">QUESTION 08</div><div class="question">術後7か月目の現在、運動・性交渉・重い物を持つことなどに制限はありますか？<br></div><div class="choices"><label class="choice"><input type="radio" name="q8" value="制限なし"><span>制限なし</span></label><label class="choice"><input type="radio" name="q8" value="一部制限あり"><span>一部制限あり</span></label><label class="choice"><input type="radio" name="q8" value="要注意"><span>要注意</span></label></div><textarea id="q8memo" placeholder="具体的な制限・注意点"></textarea></section>
+
+<section class="card"><div class="qnum">QUESTION 09</div><div class="question">手術時に癒着が多かったと伺っています。<br>今後、子宮内膜症や癒着が再発・再形成する可能性はどの程度ありますか？<br></div><div class="choices"><label class="choice"><input type="radio" name="q9" value="可能性は低い"><span>可能性は低い</span></label><label class="choice"><input type="radio" name="q9" value="可能性あり"><span>可能性あり</span></label><label class="choice"><input type="radio" name="q9" value="経過観察"><span>経過観察</span></label><label class="choice"><input type="radio" name="q9" value="判断困難"><span>現時点では判断困難</span></label></div><textarea id="q9memo" placeholder="再発・再形成のリスク、注意する症状、予防や経過観察について"></textarea></section>
+
+<section class="card"><div class="qnum">QUESTION 10</div><div class="question">おヘソ周辺に、しこりのように感じる部分や痛みがあります。<br>術後の傷・瘢痕・癒着などによるものとして考えられますか？<br> 診察や検査が必要でしょうか？<br></div><div class="choices"><label class="choice"><input type="radio" name="q10" value="経過観察"><span>経過観察</span></label><label class="choice"><input type="radio" name="q10" value="診察必要"><span>診察が必要</span></label><label class="choice"><input type="radio" name="q10" value="検査必要"><span>検査が必要</span></label><label class="choice"><input type="radio" name="q10" value="その他"><span>その他</span></label></div><textarea id="q10memo" placeholder="考えられる原因・受診の目安・必要な検査など"></textarea></section>
+
+<section class="card"><div class="qnum">QUESTION 11</div><div class="question">今回の手術の病理検査の最終結果を、改めて分かりやすく教えてください。<br></div><textarea id="q11memo" placeholder="病理結果・診断名・特記事項"></textarea></section>
+
+<section class="card"><div class="qnum">QUESTION 12</div><div class="question">今後どんな症状が出た場合、次回予約を待たずに受診した方がよいですか？<br></div><textarea id="q12memo" placeholder="例：痛み、出血、発熱、しこりの変化など先生の指示"></textarea></section>
+<section class="card final"><div class="qnum">FINAL CHECK</div><div class="question">先生から見て、今回の手術後の経過は総合的に順調と言ってよい状態でしょうか？<br> 今後、特に気をつけることがあれば教えてください。<br></div><textarea id="finalmemo" placeholder="総合評価・今後の注意点"></textarea></section>
+
+<div class="smallnote">※このシートは診察時の確認をしやすくするためのメモ用です。<br>医療判断そのものは担当医の説明・診察を優先してください。<br></div>
+</main>
+
+<script>
+(() => {
+  const STORAGE_KEY = "postop7m_question_sheet_autosave_v1";
+
+  const controls = () =>
+    Array.from(document.querySelectorAll('textarea, input[type="text"], input[type="radio"], input[type="checkbox"], select'));
+
+  function saveAll() {
+    const data = {};
+    controls().forEach((el, index) => {
+      const key = el.id || el.name || ("field_" + index);
+
+      if (el.type === "radio") {
+        if (!data["radio:" + el.name]) data["radio:" + el.name] = "";
+        if (el.checked) data["radio:" + el.name] = el.value;
+      } else if (el.type === "checkbox") {
+        data["check:" + key] = el.checked;
+      } else {
+        data[key] = el.value;
+      }
+    });
+
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  }
+
+  function loadAll() {
+    let data = {};
+    try {
+      data = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+    } catch (e) {
+      data = {};
+    }
+
+    controls().forEach((el, index) => {
+      const key = el.id || el.name || ("field_" + index);
+
+      if (el.type === "radio") {
+        const saved = data["radio:" + el.name];
+        el.checked = saved === el.value;
+      } else if (el.type === "checkbox") {
+        if (Object.prototype.hasOwnProperty.call(data, "check:" + key)) {
+          el.checked = !!data["check:" + key];
+        }
+      } else if (Object.prototype.hasOwnProperty.call(data, key)) {
+        el.value = data[key];
+      }
+    });
+  }
+
+  document.addEventListener("input", saveAll, true);
+  document.addEventListener("change", saveAll, true);
+
+  loadAll();
+})();
+</script>
+
+</body></html>
